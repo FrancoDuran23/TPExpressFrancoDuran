@@ -1,0 +1,24 @@
+.publi{
+
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    
+}
+.parra{
+    color:black;
+    font-size: 10px;
+    float:right;
+    margin-top:60px;
+}
+#columna
+{ color:black;
+    margin-top:30px;
+    background: rgb(228, 228, 228);  
+    border-radius: 10px;
+     float: right;
+     width: 220px;
+     margin: 20px 45px;
+     padding: 20px;
+     
+}

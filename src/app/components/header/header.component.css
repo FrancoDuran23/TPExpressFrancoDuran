@@ -1,0 +1,28 @@
+.tit
+{
+    padding: 10px;
+    margin-top: 35px;    
+    display:inline-block;
+}
+.texto1
+{ color:rgb(0, 0, 0);
+    font-size: 30px;    
+    margin:0px;
+    padding:0px;
+   
+    
+   
+}
+.cabecera
+{   
+    height: 130px;
+    padding: 10px;
+    background: rgb(32, 32, 32);
+    color:rgb(0, 0, 0);    
+  
+}
+.pequeña
+{
+    width: 50px; height: 50px;
+    border-radius: 10px;
+}

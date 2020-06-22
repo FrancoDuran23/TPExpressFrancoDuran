@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="card border-primary mb-3 col-md-12">
+    <h1 class=" card text-center" style="border: white;background-color: white;">Adivina la palabra en ingles!!</h1>
+    <div class="col-md-12 row">
+
+
+      <h2 style="margin-left: 370px;">Palabra: {{palabra.castellano| uppercase}}</h2>
+    </div>
+    <div style="margin-left: 350px;">
+      <img src="{{ palabra.url }}" />
+    </div>
+    <h3 style="margin-left: 440px;" class="alert-link ">Vidas: {{vidas}}</h3>
+    <br>
+    <div class="form-group row justify-content-center">
+      <input minlength="1" *ngIf="arrayPalabraIngles.length>=1" name="letter0" id="letter0" [(ngModel)]="letra0"
+        (ngModelChange)="ponerLetra()" class="form-control col-2" type="text" />
+      <input minlength="1" *ngIf="arrayPalabraIngles.length>=2" name="letter1" id="letter1" [(ngModel)]="letra1"
+        (ngModelChange)="ponerLetra()" class="form-control col-2" type="text" />
+      <input minlength="1" *ngIf="arrayPalabraIngles.length>=3" name="letter2" id="letter2" [(ngModel)]="letra2"
+        (ngModelChange)="ponerLetra()" class="form-control col-2" type="text" />
+      <input minlength="1" *ngIf="arrayPalabraIngles.length>=4" name="letter3" id="letter3" [(ngModel)]="letra3"
+        (ngModelChange)="ponerLetra()" class="form-control col-2" type="text" />
+      <input minlength="1" *ngIf="arrayPalabraIngles.length>=5" name="letter4" id="letter4" [(ngModel)]="letra4"
+        (ngModelChange)="ponerLetra()" class="form-control col-2" type="text" />
+      <input minlength="1" *ngIf="arrayPalabraIngles.length>=6" name="letter5" id="letter5" [(ngModel)]="letra5"
+        (ngModelChange)="ponerLetra()" class="form-control col-2" type="text" />
+      <input minlength="1" *ngIf="arrayPalabraIngles.length>=7" name="letter6" id="letter6" [(ngModel)]="letra6"
+        (ngModelChange)="ponerLetra()" class="form-control col-2" type="text" />
+      <input minlength="1" *ngIf="arrayPalabraIngles.length>=8" name="letter7" id="letter7" [(ngModel)]="letra7"
+        (ngModelChange)="ponerLetra()" class="form-control col-2" type="text" />
+      <input minlength="1" *ngIf="arrayPalabraIngles.length>=9" name="letter8" id="letter8" [(ngModel)]="letra8"
+        (ngModelChange)="ponerLetra()" class="form-control col-2" type="text" />
+    </div>
+    <div class="col-md-12">
+      <button type="button" class="btn btn-primary" style="margin-left:200px ;margin-bottom: 10px; width: 30%;"
+        (click)="iniciarJuego()">
+        Reiniciar el juego
+      </button>
+      <button type="button" class="btn btn-primary " style="margin-bottom: 10px; width: 30%; margin-left: 20px;"
+        (click)="palabrAleatoria()">
+        Obtener palabra aleatoria
+      </button>
+    </div>
+
+
+  </div>
